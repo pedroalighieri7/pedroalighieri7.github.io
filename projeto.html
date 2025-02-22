@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info</a>
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/doge.jpg" alt="imagem do painel">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost"> Lorem ipsum dolor </h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat porttitor dolor, id effic
+                itur diam malesuada id. Praesent viverra mi ac bibendum efficitur. Nullam nec diam quis massa tempor placerat. Proi
+                n rhoncus tempor lectus, id dictum nisi commodo consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ult
+                rices posuere cubilia curae; Nunc rhoncus euismod erat vitae rutrum. Donec eu massa eget justo consectetur bibendum. 
+                Curabitur dui metus, hendrerit in tincidu
+                nt in, vehicula et nisl. Mauris tempor tortor est, vestibulum convallis arcu convall
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>Design system</p>
+                    <p>UX</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <img id="imagemPostGrande" src="assets/doge.jpg" alt="imagem 1">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/doge.jpg" alt="imagem 2">
+                <img id="imagemPostLateral" src="assets/doge.jpg" alt="imagem 3">
+            </div>
+            <img id="imagemPostGrande" src="assets/doge.jpg" alt="imagem 4">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Praesent id faucibus dui. Mauris ornare tempor velit, et commodo est. Aenean in facilisis turpis, 
+                eget consectetur lectus. Vivamus fermentum, purus vitae dictum luctus, diam sapien consequat risus, 
+                ac lacinia velit tortor a erat. Phasellus at rhoncus nulla. Nulla scelerisque ipsum ac orci efficitur 
+                blandit. Fusce tempus purus quis odio pharetra, ac convallis sapien dictum. Nullam ullamcorper fermentum lorem, 
+                id dignissim odio malesuada at. Maecenas viverra velit erat, a vulputate sapien euismod ut.
+            </text>
+        </div>
+        <img id="imagemPostGrande" src="assets/doge.jpg" alt="imagem 3">
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="#" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="#" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Vamos começar um projeto.
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input type="text" name="name" placeholder="Seu nome">
+                        <input type="email" name="name" placeholder="Seu email">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar</button>
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>Page developed with love <br> by Pedro Alighieri</h6>
+        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="#">Linkedin</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+            <div class="email">
+                <a href="#">Email</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
