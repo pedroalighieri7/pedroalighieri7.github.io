@@ -1,8 +1,9 @@
-window.addEventListener("mousemove", (e)=>{
+// ------------------------ Mouse bolinha ----------------------------
+window.addEventListener("mousemove", (elemento)=>{
     let cursor = document.getElementById("cursor");
     setTimeout(()=>{
-        cursor.style.top = `${e.clientY}px`;
-        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${elemento.clientY}px`;
+        cursor.style.left = `${elemento.clientX}px`;
     },50)
 })
 
@@ -18,40 +19,56 @@ document.addEventListener("DOMContentLoaded", function () {
         cursor.classList.remove("active");
     }
     
-    elementos.forEach(element => {
-        element.addEventListener("mouseenter", addActiveClass);
-        element.addEventListener("mouseleave", removeActiveClass);
+    elementos.forEach(elemento => {
+        elemento.addEventListener("mouseenter", addActiveClass);
+        elemento.addEventListener("mouseleave", removeActiveClass);
     });
 });
 
 function handleScroll() {
     const header = document.querySelector('.header');
     
-    if (window.scrollY === 0) {
-        // Se o usuário estiver no topo da página
+    if (window.scrollY < 40) {
         header.style.backgroundColor = 'transparent';
+
     } else {
-        // Se o usuário não estiver no topo da página
         header.style.backgroundColor = '#FFFFFF';
     }
 }
 
-function setupScrollListener() {
+//----------------------- Header mediaQuery 576px ---------------------
+
+function mediaQueryMobile() {
     const mediaQuery = window.matchMedia('(max-width: 576px)');
 
     if (mediaQuery.matches) {
-        // Se a tela for menor ou igual a 576px, adiciona o listener
+
         document.addEventListener('scroll', handleScroll);
     } else {
-        // Se a tela for maior que 576px, remove o listener e reseta o fundo
         document.removeEventListener('scroll', handleScroll);
         const header = document.querySelector('.header');
         header.style.backgroundColor = 'transparent'; // Reseta o fundo
     }
 }
 
-// Configura o listener inicial
-setupScrollListener();
+mediaQueryMobile();
 
-// Atualiza o listener quando a tela for redimensionada
-window.addEventListener('resize', setupScrollListener);
+window.addEventListener('resize', mediaQueryMobile);
+
+// ------------------------ Formulário ------------------------
+
+document.querySelector(".formulario").addEventListener('submit', function(evento) {
+    let nome = document.querySelector('.nome').value;
+    let email = document.querySelector('.email').value;
+    let mensagem = document.getElementById('textarea').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nome === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos para enviar a mensagem")
+        evento.preventDefault();
+    } if (email ==! regex) {
+        evento.preventDefault();
+    }
+    });
+
+
