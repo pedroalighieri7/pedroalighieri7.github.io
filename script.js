@@ -8,7 +8,7 @@ window.addEventListener("mousemove", (elemento)=>{
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elementos = document.querySelectorAll(".logo, .navbar, .projetoX, .likedin, .email, .anterior, .proximo, .Enviar");
+    const elementos = document.querySelectorAll(".logo, .navbar, .projetoX, .likedin, .email, .anterior, .proximo, .Enviar, #textarea");
     const cursor = document.querySelector(".cursor");
     
     function addActiveClass() {
