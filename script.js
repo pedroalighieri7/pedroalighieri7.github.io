@@ -8,7 +8,7 @@ window.addEventListener("mousemove", (elemento)=>{
 })
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elementos = document.querySelectorAll(".logo, .navbar, .projetoX, .likedin, .nome, .email, .anterior, .proximo, .Enviar, #textarea");
+    const elementos = document.querySelectorAll(".caseStudies, .logo, .navbar, .projetoX, .likedin, .email, .nome, .anterior, .proximo, .Enviar, #textarea");
     const cursor = document.querySelector(".cursor");
     
     function addActiveClass() {
@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
         elemento.addEventListener("mouseleave", removeActiveClass);
     });
 });
+
+//----------------------- Header ---------------------
 
 function handleScroll() {
     const header = document.querySelector('.header');
@@ -70,5 +72,3 @@ document.querySelector(".formulario").addEventListener('submit', function(evento
         evento.preventDefault();
     }
     });
-
-

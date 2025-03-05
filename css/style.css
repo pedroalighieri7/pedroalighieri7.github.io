@@ -21,7 +21,7 @@
 
 body {
    min-height: 100vh;
-   background-color: #F4F4F1;
+   background-color: #f4f1ea;
 }
 
 html {
@@ -68,7 +68,7 @@ html {
 
 #setaFooter {
 
-    filter: brightness(0) saturate(100%) invert(100%) sepia(2%) saturate(0%) hue-rotate(176deg) brightness(104%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(215%) hue-rotate(23deg) brightness(110%) contrast(91%);
 
 }
 
@@ -112,8 +112,7 @@ section.apresentacao {
 h1 {
     text-decoration: none;
     font-size: 4.5rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 600;
 }
 
 h2 {
@@ -326,7 +325,7 @@ h6 {
     display: flex;
     font-size: 16px;
     font-weight: 400;
-    color: #ffffff;
+    color: #f4f1ea;
 }
 
 #imagemProjeto2 {
@@ -396,7 +395,7 @@ h6 {
     text-transform: uppercase;
     padding-left: 40px;
     transform: 500ms ease;
-    color: #ffffff;
+    color: #f4f1ea;
 }
 
 .email a {
@@ -406,7 +405,7 @@ h6 {
     margin-right: 10px;
     text-transform: uppercase;
     padding-left: 40px;
-    color: #ffffff;
+    color: #f4f1ea;
 }
 
 /* layout padrão de post caso querer aumentar*/ 
@@ -566,6 +565,7 @@ h6 {
 }
 
 .contatoContainer {
+    border-top: #141414 1px solid;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -577,22 +577,20 @@ h6 {
 .contato {
     display: flex;
     justify-content: center;
-    background-color: #DFDFDE;
 }
 
 .contatoTitulo {
     
     color: #141414;
     font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 2rem;
 }
 
 
 input {
     border: none;
-    border-bottom: 3px solid #141414;
+    border-bottom: 1px solid #141414;
     background-color: transparent;
     padding: 1rem 0;
     width: 400px;
@@ -675,6 +673,138 @@ textarea {
     rotate: -90deg;
 }
 
+.containerTextoLabel {
+    display: flex;
+    gap: 1rem;
+}
+
+#testeDrive {
+    position: absolute;
+    visibility: hidden;
+}
+
+.caseStudiesPresentation {
+    display: flex;
+    width: 100%;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 2rem ;
+    max-width: 1920px;
+}
+
+.caseStudies {
+    display: flex;
+    width: 100%;
+    border: solid 1px #141414;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    transition: opacity 0.5s, 500ms ease;
+    color: #141414;
+    max-width: 1920px;
+    align-items: center;
+
+}
+
+.caseStudiesNum {
+    margin: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.caseStudiesTitle {
+    margin: 2rem 2rem 2rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.caseStudiesImgElement {
+    position: absolute;
+    left: -100px;
+    top: -110px;
+    vertical-align: middle;
+    border: solid 1px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    object-fit: cover;
+    width: 32vw;
+    height: auto;
+    aspect-ratio: 3/2;
+    transition: opacity 0.5s, 500ms ease;
+    z-index: 100;
+}
+
+.caseStudies:hover .caseStudiesImgElement{
+    opacity: 1;
+    visibility: visible;
+}
+
+.caseStudiesLabel {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-self: center;
+    justify-content: flex-end;
+    margin: 0 2rem;
+    font-size: 1.2rem;
+    align-items: center;
+    
+}
+
+
+.caseStudiesLabelElement {
+    color: #141414;
+}
+
+.caseStudiesNumElement {
+    color: #141414;
+}
+
+.caseStudiesTitleElement {
+    color: #141414;
+}
+
+.caseStudies:hover {
+    background-color: #000;
+}
+
+.caseStudies:hover .caseStudiesLabelElement {
+    color: #F4F4F1;
+}
+
+.caseStudies:hover .caseStudiesNumElement {
+    color: #F4F4F1;
+}
+
+.caseStudies:hover .caseStudiesTitleElement {
+    color:#F4F4F1;
+}
+
+.caseStudiesAnchor {
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+}
+
+.caseStudiesImg {
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+
+.containerCaseStudiesTitle {
+    display: flex;
+    width: 100%;
+}
+
+.containerCaseStudiesLabel {
+    display: flex;
+    width: 100%;
+}
+
+
+
 
 /* =========================== media querys style ======================================== */
 
@@ -741,7 +871,7 @@ textarea {
 
     input {
         border: none;
-        border-bottom: 3px solid #141414;
+        border-bottom: 1px solid #141414;
         background-color: transparent;
         border-radius: 0rem;
         padding: 1rem 0;
@@ -749,6 +879,87 @@ textarea {
         outline: none;
         font-size: 1.0rem;
         
+    }
+
+    .caseStudiesPresentation {
+        display: flex;
+        width: 100%;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 1rem ;
+        max-width: 1920px;
+    }
+
+    .caseStudies {
+        display: flex;
+        width: 100%;
+        border: solid 1px #141414;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        transition: opacity 0.5s, 500ms ease;
+        color: #141414;
+        max-width: 1920px;
+        align-items: center;
+    
+    }
+    
+    .caseStudiesNum {
+        margin: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .caseStudiesTitle {
+        margin: 1rem 1rem 1rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 100%;
+    }
+    
+    .caseStudiesImgElement {
+        position: absolute;
+        left: -200px;
+        top: -50px;
+        vertical-align: middle;
+        border: solid 1px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        object-fit: cover;
+        width: 32vw;
+        height: auto;
+        transition: opacity 0.5s, 500ms ease;
+        z-index: 100;
+    }
+    
+    .caseStudies:hover .caseStudiesImgElement{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .caseStudiesLabel {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+        
+    }
+
+    .caseStudiesAnchor {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .contatoTitulo {
+    
+        color: #141414;
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
     }
 }
   

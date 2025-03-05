@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info</a>
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/04/MH.png" alt="imagem do painel">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost">Myheart</h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                O projeto foi desenvolvido como trabalho final para o CalArts. A proposta central é um aplicativo que auxilia responsáveis por crianças com complicações cardíacas.
+                 O aplicativo conta com duas interfaces distintas: a interface para Apple Watch foi pensada especialmente para o público infantil, 
+                 com ilustrações lúdicas e uma construção visual agradável, utilizando cores suaves e amigáveis. 
+                 Já a interface para iPhone é voltada para os responsáveis, apresentando informações detalhadas e 
+                 funcionais para o acompanhamento da saúde da criança.
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>UI/UX</p>
+                    <p>App Design</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/04/MH1.png" alt="imagem 2">
+                <img id="imagemPostLateral" src="assets/04/MH2.png" alt="imagem 3">
+            </div>
+            <img id="imagemPostGrande" src="assets/04/MH3.png" alt="imagem 4">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                O desenvolvimento desse aplicativo surge como uma resposta sensível e 
+                inovadora às necessidades de famílias que lidam com complicações cardíacas infantis. 
+                A dualidade das interfaces reflete uma preocupação cuidadosa com os dois públicos envolvidos:
+                 as crianças, que precisam de uma experiência leve e acolhedora, e os responsáveis, que 
+                 demandam informações claras e precisas para o monitoramento da saúde.
+            </text>
+        </div>
+        <section class="imagemPostApresentacao">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/04/MH4.png" alt="imagem 4">
+                <img id="imagemPostLateral" src="assets/04/MH5.png" alt="imagem 5">
+            </div>
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="/zeroo-interface.html" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="/40tena.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Vamos começar um projeto.
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome">
+                        <input class="email"  type="email" name="name" placeholder="Seu email">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar</button>
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 -  Pedro Alighieri</h6>
+        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="#">Linkedin</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+            <div class="email">
+                <a href="#">Email</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info</a>
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/01/painel.jpg" alt="imagem do painel">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost">Marca Zeroo</h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                A criação de uma identidade para uma marca é sempre um desafio significativo, 
+                e no caso da marca Zeroo, não foi diferente. Embora minha função na empresa seja 
+                como Product Designer, saí completamente da minha zona de conforto para desenvolver 
+                uma identidade que refletisse os valores e a essência desse projeto, pelo qual tenho 
+                grande apreço. Após diversas reuniões com os Product Owners (POs), chegamos a um conceito que 
+                não apenas representa os pilares da empresa, mas também transmite uma imagem acolhedora e inovadora de 
+                um produto que pretende revolucionar a indústria de restaurantes. Foi um processo desafiador, mas extremamente 
+                gratificante, que resultou em uma identidade visual alinhada com a visão de transformação que a Zeroo busca promover.
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>Branding</p>
+                    <p>IDV</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <img id="imagemPostGrande" src="assets/01/zeroo-1.png" alt="imagem 1">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/01/paleta.png" alt="imagem 2">
+                <img id="imagemPostLateral" src="assets/01/grid.png" alt="imagem 3">
+            </div>
+            <img id="imagemPostGrande" src="assets/01/web.png" alt="imagem 4">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                O desenvolvimento do ícone da marca Zeroo foi um processo cuidadoso e detalhado, 
+                que exigiu atenção tanto à estética quanto à funcionalidade. Como o ícone seria a representação 
+                visual da marca em um espaço tão reduzido e frequentemente utilizado, era essencial que ele fosse simples, 
+                memorável e alinhado aos valores da empresa. A ideia principal é um "Z" estilizando em formato de carrinho de compras.
+            </text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/01/app.png" alt="imagem 2">
+            <img id="imagemPostLateral" src="assets/01/favicon.png" alt="imagem 3">
+        </div>
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="/40tena.html" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="/MDP.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Vamos começar um projeto.
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome">
+                        <input class="email"  type="email" name="name" placeholder="Seu email">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar</button>
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 -  Pedro Alighieri</h6>
+        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="#">Linkedin</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+            <div class="email">
+                <a href="#">Email</a>
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

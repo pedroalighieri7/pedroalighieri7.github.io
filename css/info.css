@@ -40,11 +40,10 @@ main.mainInfo {
 }
 
 .infoFormacaoTituto {
-    text-transform: uppercase;
     font-size: 2rem;
     padding: 1rem 0rem;
-    border-top: 3px solid #141414;
-    font-weight: 800;
+    border-top: 1px solid #141414;
+    font-weight: 600;
 
 }
 
@@ -61,11 +60,10 @@ main.mainInfo {
 }
 
 .infoExperienciaTitulo {
-    text-transform: uppercase;
     font-size: 2rem;
     padding: 1rem 0rem;
-    border-top: 3px solid #141414;
-    font-weight: 800;
+    border-top: 1px solid #141414;
+    font-weight: 600;
 
 }
 
@@ -84,9 +82,8 @@ main.mainInfo {
 }
 
 .bioTitulo {
-    text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .bioCorpo {
