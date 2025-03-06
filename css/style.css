@@ -841,6 +841,10 @@ textarea {
         padding: 1rem 0 1rem 0;
     }
 
+    section.apresentacao {
+        margin: 4.5rem 0rem 2rem 0rem;
+    }
+
     .cursor {
         background-color: transparent;
     }
@@ -976,7 +980,7 @@ textarea {
     }
 
     section.apresentacao {
-        margin: 2rem 0rem;
+        margin: 4.5rem 0rem 2rem 0rem;
     }
     .header {
         position: fixed;
