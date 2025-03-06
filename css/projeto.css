@@ -153,6 +153,47 @@ section.PostApresentacao {
 
 @media (max-width: 768px) {
 
+    #imagemPostPainel {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+        border: #141414 solid 1px;
+    }
+
+    .tituloPost {
+        margin: 0px 0px 10px 0;
+        display: flex;
+    
+    }
+
+    .escopoCorpo {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        font-size: 1rem;
+    }
+
+    .escopoPost {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .corpoTextoPost {
+        width: 100%;
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .corpoPost {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
     .textopadrao {
         width: 100%;
         margin: 0 0%;
@@ -175,11 +216,11 @@ section.PostApresentacao {
         animation-name: a-apresentacao;
     }
     .pageHero {
-        padding:  1rem;
+        border-bottom: #141414 1px solid;
+    margin: 4.6rem 1rem 0 1rem;
     }
 
     .corpoTextoPost {
-        width: 90%;
         font-size: 1rem;
     }
 
