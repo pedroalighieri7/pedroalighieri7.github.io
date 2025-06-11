@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </a>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/03/zeroo.png" alt="Várias marcas formando um padrão. A marca é a Zeroo que é representada por 'z' estilizado em formato de carrinho de compras.">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost">Zeroo Interface</h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                A criação de uma interface do zero foi um grande desafio. 
+                A alta complexidade do projeto e o volume de informações sem precedentes 
+                transformaram a relação entre o desenvolvimento e os stakeholders em um ambiente dinâmico,
+                 repleto de trocas constantes de ideias e soluções. Participei ativamente de todas as etapas do 
+                 processo, mantendo uma comunicação contínua com desenvolvedores e Product Owners (POs) para garantir 
+                 o alinhamento e a entrega de um produto eficiente e alinhado às expectativas.
+                <br>
+                <br>
+                <b>Nota:</b> a abordagem dessa página é propositalmente generalista a fim de assegurar o sigilo de informação sobre o produto a pedido do cliente.
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>UX/UI</p>
+                    <p>Design System</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <img id="imagemPostGrande" src="assets/03/zi 1.png" alt="Apresenta várias telas da interface do sistema">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/03/z2.png" alt="três modais do sistema">
+                <img id="imagemPostLateral" src="assets/03/z5.png" alt="vários assets do sistema da Zeroo">
+            </div>
+            <div class="textoCentralizado">
+                <text class="textopadrao">
+                    As diversas abordagens do sistema para cada área trás 
+                    um aspecto único para cada asset, mas mantém a identidade do sistema e 
+                    promove uma solução simples para uma ideia complexa.
+                </text>
+            </div>
+            <img id="imagemPostGrande" src="assets/03/z6.png" alt="Mais algumas outras imagens do sistema da Zeroo">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                Foi uma honra imensa fazer parte de uma ideia tão revolucionária e mirabolante, 
+                que não apenas desafia os padrões atuais, mas também promete transformar radicalmente
+                a área de administração de restaurantes. Participar de um projeto com tamanho potencial de impacto,
+                 que busca simplificar processos complexos e elevar 
+                a eficiência do setor, foi uma experiência verdadeiramente enriquecedora. Saber que essa iniciativa pode mudar para sempre a forma como os restaurantes são gerenciados 
+                é algo que me enche de orgulho e motivação. Foi um privilégio contribuir para algo que pode deixar um legado 
+                duradouro no mercado.
+            </text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/03/z4.png" alt="imagem 2">
+            <img id="imagemPostLateral" src="assets/03/z7.png" alt="imagem 3">
+        </div>
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="/MDP.html" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="seta para esquerda">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="/myheart.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="seta para direita">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Que tal um café?
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome ex: Carlos">
+                        <input class="email"  type="email" name="name" placeholder="Email ex: seuemail@email.com">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
+</h6>
+        <img src="assets/pinguim.gif" alt="lupe104 - meu querido penguim do club penguin" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:contact.pedroalighieri@gmail.com">Email
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

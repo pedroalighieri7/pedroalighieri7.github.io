@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pedro Alighieri">
+    <meta property="og:description" content="Designer, artista & desenvolvedor. Criativo elevado à última potência e fascinado por tecnologia.">
+    <meta property="og:image" content="/assets/thumb.png">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </a>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/05/40tena.png" alt="Gravura de um ser humanoide pulando no espaço">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost"> 40tena </h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                Antes de me formar em Design, cursei Artes Visuais na UnB, uma experiência que foi fundamental 
+                para transformar minha visão sobre as áreas criativas. Esse período nas artes me permitiu expandir 
+                meus horizontes, influenciando diretamente meu processo de design. Hoje, busco constantemente sair 
+                do convencional, explorando soluções inovadoras e inusitadas em meus projetos.
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>Arte</p>
+                    <p>Poética</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/05/t1.png" alt="gravura de humanoide sem cabeça, tentando se encontrar">
+                <img id="imagemPostLateral" src="assets/05/t2.png" alt="gravura de humanoide assustado e com desafios">
+            </div>
+            <img id="imagemPostGrande" src="assets/05/t5.png" alt="gravura de humanoide flutuando no espaço, segurando uma estrela, tentando se encontrar">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                40tena foi uma série de gravuras que expressão as diferentes 
+                formas de experimentação da individualidade dentro de um contexto 
+                de pandemia. Estêncil feito em acrílico sob papel 297mm x 420mm.
+            </text>
+        </div>
+        <section class="imagemPostApresentacao">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/05/t3.png" alt="gravura de um ser simbolizando o infinito">
+                <img id="imagemPostLateral" src="assets/05/t4.png" alt="imagem de um ser tentando se encontrar">
+            </div>
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="/myheart.html" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="Seta para esquerda">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="/marca-zeroo.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="Seta para direita">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Que tal um café?
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome ex: Carlos">
+                        <input class="email"  type="email" name="name" placeholder="Email ex: seuemail@email.com">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
+</h6>
+        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:contact.pedroalighieri@gmail.com">Email
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

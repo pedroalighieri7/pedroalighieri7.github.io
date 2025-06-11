@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pedro Alighieri">
+    <meta property="og:description" content="Designer, artista & desenvolvedor. Criativo elevado à última potência e fascinado por tecnologia.">
+    <meta property="og:image" content="/assets/thumb.png">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <script src="script.js"></script>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </a>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+    <main class="mainInfo">
+        <section class="margem">
+            <section class="paginaInfo">
+                <section class="info">
+                    <div class="infoFormacao">
+                        <text class="infoFormacaoTituto">Formação</text>
+                        <ul class="infoExperienciaCorpo">
+                            <li>Artes Visuais - Universidade de Brasília (UnB) (2019 - 2021)</li>
+                            <li>Design - Universidade de Brasília (UnB) (2019 - 2021)</li>
+                            <li>Elements of User Interface - CalArts (2021 - 2021)</li>
+                            <li>Foundations of User Experience (UX) - Google (2021 - 2021)</li>
+                            <li>IxDF Member - Interaction Design Foundation (2025)</li>
+                        </ul>
+                    </div>
+                    <div class="infoExperiencia">
+                        <text class="infoExperienciaTitulo">Experiência</text>
+                        <ul class="infoExperienciaCorpo">
+                            <li>Designer Gráfico - Freelancer (2018 - 2019)</li>
+                            <li>Designer Multimídia - Coversando com Designers (2020 - 2021)</li>
+                            <li>Designer Gráfico - Do ICA ao IdA (2022 - 2022)</li>
+                            <li>Product Designer - Serpro (2022 - 2023)</li>
+                            <li>Product Designer / Sócio - Zeroo (2023) </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="bio">
+                    <text class="bioTitulo">Bio</text>
+                    <div class="bioCorpo">
+                        <p class="bioCorpoParag"> 
+                            Pedro Alighieri é um artista, designer e desenvolvedor brasileiro. Nordestino de coração, Pedro nasceu em Recife (PE) e passou boa parte de sua vida na cidade de Natal (RN). Formou-se em Design na Universidade de Brasília (UnB), se especializando na área de UX/UI. Seus primeiros trabalhos de design começaram no Paint. Aos 9, criava logos para empresas fictícias, blogs no blogspot e servers no Minecraft, além de adorar criar jogos no Scratch. Em 2010, criou com amigos potiguares um pequeno projeto no Youtube. Participando na criação de thumbnails para o canal, identidade visual e edição de vídeo. Em seu auge, o “Noisjang” possuía mais de 3 milhões de visualizações e 50 mil inscritos. Já no ensino médio, Pedro criou vários projetos por conta própria com o intuito de ajudar os colegas nos estudos. Entre eles, o projeto Liter, um fórum destinado para o aprimoramento de dissertações focado no ENEM. 
+                        </p>
+                        <p class="bioCorpoParag">
+                            No meio artístico, participou da exposição da BCE com o Espaço POP, além de participar do White page Gallery concebido pela equipe do MediaLab da Universidade de Brasília. Desenvolveu a IDV e fez parte da montagem da galeria Do ICA ao IdA em homenagem aos 50 anos do Instituo de Artes da UnB.
+
+                        </p>
+                        <p class="bioCorpoParag">
+                            Na área profissional, trabalhou no aprimoramento do gov.br DS, o design system do 
+                            governo federal, além de trabalhar na criação de sistemas e interfaces para 
+                            empresas e instuições como a Recefeita Federal, IBAMA, entre outras. Atualmente 
+                            encontra-se imerso no mundo de UX/UI, HCI, WCAG e AI. Pedro possui experiência em 
+                            desenvolvimento de interfaces ágeis em equipes plurais. Acredita que uma abordagem acessível, 
+                            ética e humana é essencial na criação de uma interface digital que realmente funciona.
+
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Que tal um café?
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome ex: Carlos">
+                        <input class="email"  type="email" name="name" placeholder="Email ex: seuemail@email.com">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
+</h6>
+        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:contact.pedroalighieri@gmail.com">Email
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

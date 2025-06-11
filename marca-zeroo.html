@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- estudar exatamente o que serve esses viewport, content
+     etc, então você conseguiu entrar no devmode do navegador? Que isso po -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pedro Alighieri">
+    <meta property="og:description" content="Designer, artista & desenvolvedor. Criativo elevado à última potência e fascinado por tecnologia.">
+    <meta property="og:image" content="/assets/thumb.png">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/projeto.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="cursor" id="cursor"></div>
+    <!-- header -->
+
+    <header class="header">
+        
+        <a href="index.html" class="logo">Pedro Alighieri</a>
+
+        <nav class="navbar">
+            <a href="info.html">Info
+            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            </a>
+        </nav>
+    </header>
+   <!-- Apresentação Post -->
+
+   <div class="pageHero">
+    <section class="painel">
+        <img id="imagemPostPainel" src="assets/01/painel.jpg" alt="Imagem apresenta algumas telas do 
+            sistema onde a marca da empresa está sendo aplicada. Os dois frames do sistema estão sobrepostos num fundo laranja.">
+    </section>
+    
+    <section class="PostApresentacao">
+        <h1 class="tituloPost">Marca Zeroo</h1>
+        <div class="corpoPost">
+            <text class="corpoTextoPost">
+                A criação de uma identidade para uma marca é sempre um desafio significativo, 
+                e no caso da marca Zeroo, não foi diferente. Embora minha função na empresa seja 
+                como Product Designer, saí completamente da minha zona de conforto para desenvolver 
+                uma identidade que refletisse os valores e a essência desse projeto, pelo qual tenho 
+                grande apreço. Após diversas reuniões com os Product Owners (POs), chegamos a um conceito que 
+                não apenas representa os pilares da empresa, mas também transmite uma imagem acolhedora e inovadora de 
+                um produto que pretende revolucionar a indústria de restaurantes. Foi um processo desafiador, mas extremamente 
+                gratificante, que resultou em uma identidade visual alinhada com a visão de transformação que a Zeroo busca promover.
+            </text>
+            <div class="escopoPost">
+                <text class="escopoCorpo">
+                    <p>Branding</p>
+                    <p>IDV</p>
+                </text>
+            </div>
+        </div>
+    </section>
+</div>
+ 
+    <main class="mainPost">
+        <section class="imagemPostApresentacao">
+            <img id="imagemPostGrande" src="assets/01/zeroo-1.png" alt="Imagem apresenta a logo da empresa. Um 'z' estilizado com formato de 
+                carrinho. Ao lado direito desse signo, o nome 'zeroo' escrito em letras redondas de caixa baixa.">
+            <div id="imagemPostGridLateral">
+                <img id="imagemPostLateral" src="assets/01/paleta.png" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+                <img id="imagemPostLateral" src="assets/01/grid.png" alt="A imagem apresenta vários tamanhos e traçados geométricos, alturas e afins do signo da letra 'z' estilizada">
+            </div>
+            <img id="imagemPostGrande" src="assets/01/web.png" alt="Imagem apresenta vários frames do sistema da Zeroo.">
+        </section>
+        <div class="textoCentralizado">
+            <text class="textopadrao">
+                O desenvolvimento do ícone da marca Zeroo foi um processo cuidadoso e detalhado, 
+                que exigiu atenção tanto à estética quanto à funcionalidade. Como o ícone seria a representação 
+                visual da marca em um espaço tão reduzido e frequentemente utilizado, era essencial que ele fosse simples, 
+                memorável e alinhado aos valores da empresa. A ideia principal é um "Z" estilizando em formato de carrinho de compras.
+            </text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/01/app.png" alt="Imagem apresenta o ícone do aplicativo da Zeroo no Iphone.">
+            <img id="imagemPostLateral" src="assets/01/favicon.png" alt="Imagem apresenta o ícone da Zeroo como favicon em navegador qualquer.">
+        </div>
+        <section class="paginacao">
+            <div class="anterior">
+                <a href="/40tena.html" class="anteriorAnchor">
+                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="seta para esquerda">
+                    <text class="anteriorTexto">Anterior</text>
+                </a>
+            </div>
+            <div class="proximo">
+                <a href="/MDP.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo</text>
+                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="seta para direita">
+                </a>
+            </div>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Que tal um café?
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Seu nome ex: Carlos">
+                        <input class="email"  type="email" name="name" placeholder="Email ex: seuemail@email.com">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>O que vamos desenvolver?</label>
+                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Enviar
+                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="consideracoes">
+        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
+</h6>
+        <img src="assets/pinguim.gif" alt="lupe104 - meu querido peguin do famoso clube peguin" class="lupe">
+        </div>
+        
+        <nav class="links">
+            <div class="likedin">
+                <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:contact.pedroalighieri@gmail.com">Email
+                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

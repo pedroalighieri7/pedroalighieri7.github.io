@@ -1,0 +1,236 @@
+@keyframes a-apresentacao{
+    from{
+        translate: 0 5vh;
+       opacity: 0;
+       scale: 1;
+    }
+    to {
+        translate:0 0;
+       opacity: 1;
+       scale: 1;
+    }   
+}
+
+
+main.mainPost {
+    margin: 4.6rem;
+    animation-duration: 1s;
+    animation-name: a-apresentacao;
+}
+
+#imagemPostPainel {
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+}
+
+.tituloPost {
+    margin: 30px 0px 20px 0;
+    display: flex;
+
+}
+
+.corpoPost {
+    margin-left: 275px;
+    display: flex;
+    gap: 50px;
+    font-size: 1rem;
+}
+
+.corpoTextoPost {
+    width: 45%;
+    font-size: 1rem;
+}
+
+.escopoPost {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 35%;
+}
+
+.escopoTitulo {
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    border-bottom: #141414 3px solid;
+}
+
+.escopoCorpo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1rem;
+}
+
+section.imagemPostApresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+#imagemPostGrande {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3px;
+    border: #141414 1px solid;
+}
+
+#imagemPostLateral {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    object-fit: cover;
+    border-radius: 3px;
+    border: #141414 solid 1px;
+}
+    
+#imagemPostCentro {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+    border-radius: 3px;
+}
+
+section.PostApresentacao {
+    margin-bottom: 5%;
+    animation-duration: 1s;
+    animation-name: a-apresentacao;
+}
+
+#imagemPostGridLateral {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+
+}
+
+.pageHero {
+    border-bottom: #141414 1px solid;
+    margin: 4.6rem 4.6rem 0 4.6rem;
+}
+
+.textoCentralizado {
+    display: flex;
+    justify-items: center;
+    padding: 5rem 0rem;
+    width: 100%;
+}
+
+.textopadrao {
+    width: 40%;
+    margin: 0 30%;
+    font-size: 1rem;
+}
+
+/* =========================== media querys projeto ======================================== */
+
+@media (max-width: 1200px) {
+    .corpoPost {
+        margin-left: 0px;
+        display: flex;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    #imagemPostGridLateral {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+    
+    }    
+}
+
+@media (max-width: 768px) {
+
+    #imagemPostPainel {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+        border-radius: 3px;
+        border: #141414 solid 1px;
+    }
+
+    .tituloPost {
+        margin: 0px 0px 10px 0;
+        display: flex;
+    
+    }
+
+    .escopoCorpo {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        font-size: 1rem;
+    }
+
+    .escopoPost {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .corpoTextoPost {
+        width: 100%;
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .corpoPost {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .textopadrao {
+        width: 100%;
+        margin: 0 0%;
+        font-size: 1rem;
+    }
+
+    .textoCentralizado {
+        display: flex;
+        justify-items: center;
+        padding: 2rem 0rem;
+        width: 100%;
+    }
+
+}
+@media (max-width: 576px) {
+
+    main.mainPost {
+        margin: 1rem;
+        animation-duration: 1s;
+        animation-name: a-apresentacao;
+    }
+    .pageHero {
+        border-bottom: #141414 1px solid;
+    margin: 4.6rem 1rem 0 1rem;
+    }
+
+    .corpoTextoPost {
+        font-size: 1rem;
+    }
+
+    .tituloPost {
+        margin: 5px 0px 5px 0;
+        display: flex;
+
+    }
+
+    .painel {
+        margin-top: 4.5rem;
+    }
+}

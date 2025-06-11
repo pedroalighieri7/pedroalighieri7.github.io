@@ -1,0 +1,209 @@
+
+
+@keyframes a-apresentacao{
+    from{
+        translate: 0 5vh;
+       opacity: 0;
+       scale: 1;
+    }
+    to {
+        translate:0 0;
+       opacity: 1;
+       scale: 1;
+    }   
+}
+
+
+main.mainHome {
+    margin: 4.6rem;
+    animation-duration: 1s;
+    animation-name: a-apresentacao;
+}
+
+.row1 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1920px;
+    gap: 2%;
+    margin-bottom: 2%;
+}
+
+.projetoX {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    gap: 10px;
+    max-height: fit-content;
+}
+
+#projetoXAncor {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.projetoXImage {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.projetoXImageAlt {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.projetoXTexto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    transition: background 500ms ease;
+    border-radius: 3px;
+}
+
+.projetoX:hover #setaPostX{
+    opacity: 1;
+    visibility: visible;
+}
+
+.projetoX:hover .projetoXTexto{
+    background-color: #000000;
+}
+
+.projetoX:hover .projetoXTextoCorpo{
+    color: #ffffff;
+}
+
+.projetoX:hover .projetoXTextoLabel{
+    color: #ffffff;
+}
+
+.projetoX:hover .projetoXTextoTitulo{
+    color: #ffffff;
+}
+
+.containerProjetoXTexto {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.projetoXTextoTitulo {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.projetoXTextoCorpo {
+    font-size: 1rem;
+    color: #8b8b8b;
+
+}
+
+.projetoXTextoLabel {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8b8b8b;
+
+}
+
+
+#setaPostX {
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    align-items: flex-end;
+    filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(46deg) brightness(116%) contrast(100%);
+    transition: opacity 0.5s, 500ms ease;
+}
+
+
+/* =========================== media querys index ======================================== */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    .row1 {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        max-width: 1920px;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .projetoX {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        max-height: fit-content;
+    }
+
+    .projetoXTextoTitulo {
+        font-size: 2rem;
+        text-decoration: none;
+        font-weight: 800;
+        text-transform: uppercase;
+    
+    }
+    
+    .projetoXTextoCorpo {
+        font-size: 1rem;
+        color: #8b8b8b;
+    
+    }
+
+    .projetoXTextoLabel {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #8b8b8b;
+    
+    }
+
+    #setaPostX {
+        width: 11px;
+        height: 11px;
+    }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+    main.mainHome {
+    margin: 1rem;
+    animation-duration: 1s;
+    animation-name: a-apresentacao;
+}
+
+}
+
+
