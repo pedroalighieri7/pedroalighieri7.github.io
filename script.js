@@ -72,3 +72,36 @@ document.querySelector(".formulario").addEventListener('submit', function(evento
         evento.preventDefault();
     }
     });
+
+// ------------------------ Imagem card ------------------------
+
+function moveCaseStudiesImg() {
+  const allCaseStudies = document.querySelectorAll('.caseStudies'); // pega todas as seções
+  const isMobile = window.innerWidth <= 576;
+
+  allCaseStudies.forEach(section => {
+    const containerLabel = section.querySelector('.containerCaseStudiesLabel');
+    const anchor = section.querySelector('.caseStudiesAnchor');
+    const imgDiv = section.querySelector('.caseStudiesImg');
+
+    if (!containerLabel || !anchor || !imgDiv) return;
+
+    if (isMobile) {
+      
+      if (imgDiv.parentNode !== anchor) {
+        anchor.insertBefore(imgDiv, anchor.firstChild);
+      }
+    } else {
+
+      if (imgDiv.parentNode !== containerLabel) {
+        containerLabel.insertBefore(imgDiv, containerLabel.firstChild);
+      }
+    }
+  });
+}
+
+
+moveCaseStudiesImg();
+
+
+window.addEventListener('resize', moveCaseStudiesImg);

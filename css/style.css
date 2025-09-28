@@ -16,7 +16,6 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     color: #141414;
-    cursor: none;
 }
 
 body {
@@ -63,21 +62,23 @@ html {
     font-weight: 400;
     margin-right: 10px;
     text-transform: uppercase;
-    transform: 500ms ease;
+
 }
 
-
+#seta {
+    transition: transform 0.3s ease;
+}
 
 .navbar:hover #seta{
     filter: invert(0%) sepia(12%) saturate(753%) hue-rotate(326deg) brightness(91%) contrast(84%);
-    transform: 500ms ease; 
+    transform: rotate(-45deg);
 }
 
 /* Apresentacao */
 
 section.apresentacao {
     justify-content: center;
-    margin: 8rem 2rem;
+    margin: 4rem 0rem 4rem 0rem;
     display: flex;
     flex-direction: center;
     justify-self: center;
@@ -393,6 +394,14 @@ h6 {
     color: #141414;
 }
 
+#setaFooter {
+    transition: transform 0.3s ease;
+}
+
+.likedin a:hover #setaFooter {
+    transform: rotate(-45deg);
+}
+
 .email a {
     font-size: 32px;
     text-decoration: none;
@@ -401,6 +410,10 @@ h6 {
     text-transform: uppercase;
     padding-left: 40px;
     color:#141414;
+}
+
+.email a:hover #setaFooter {
+    transform: rotate(-45deg);
 }
 
 /* layout padrão de post caso querer aumentar*/ 
@@ -478,8 +491,8 @@ h6 {
 
 .cursor {
     position: fixed;
-    height: 30px;
-    width: 30px;
+    height: 10px;
+    width: 10px;
     background-color: #000;
     border-radius: 100%;
     margin-left: -15px;
@@ -490,7 +503,7 @@ h6 {
 }
 
 .cursor.active {
-    transform: scale(2.0);
+    transform: scale(5.0);
     backdrop-filter: grayscale(1);
     mix-blend-mode: difference;
     background-color: #fff;
@@ -529,8 +542,12 @@ h6 {
     width: 100%;
     align-self: center;
     filter: brightness(0) saturate(100%) invert(8%) sepia(4%) saturate(8%) hue-rotate(345deg) brightness(104%) contrast(102%);
+    transition: transform 0.3s ease;
 }
 
+.proximoAnchor:hover #proximoImagem {
+    transform: rotate(360deg);
+}
 .anterior {
     display: flex;
     width: fit-content;
@@ -557,6 +574,11 @@ h6 {
     width: 100%;
     align-self: center;
     filter: brightness(0) saturate(100%) invert(8%) sepia(4%) saturate(8%) hue-rotate(345deg) brightness(104%) contrast(102%);
+    transition: transform 0.3s ease;
+}
+
+.anteriorAnchor:hover #anteriorImagem {
+    transform: rotate(-360deg);
 }
 
 .contatoContainer {
@@ -565,7 +587,7 @@ h6 {
     flex-direction: column;
     max-width: 1920px;
     margin: 0rem 4.5rem;
-    padding: 4.5rem 0;
+    padding: 0rem 0rem 4.5rem 0rem;
 }
 
 .contato {
@@ -576,7 +598,7 @@ h6 {
 .contatoTitulo {
     
     color: #141414;
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
@@ -649,6 +671,10 @@ textarea {
     
 }
 
+.Enviar:hover #setaEnviar {
+        transform: rotate(45deg);
+    }
+
 .containerButton {
     display: flex;
     width: 100%;
@@ -666,6 +692,7 @@ textarea {
 
 #setaEnviar {
     rotate: -90deg;
+    transition: transform 0.3s ease;
 }
 
 .containerTextoLabel {
@@ -714,8 +741,9 @@ textarea {
 
 .caseStudiesImgElement {
     position: absolute;
-    left: -100px;
-    top: -110px;
+    top: 50%;              /* centro vertical */
+    right: -10rem;              /* gruda na esquerda */
+    transform: translate(50%, -50%);
     vertical-align: middle;
     border: solid 1px;
     border-radius: 5px;
@@ -832,7 +860,7 @@ textarea {
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
-        padding: 1rem 0 1rem 0;
+        padding: 1rem 0rem;
     }
 
     section.apresentacao {
@@ -912,22 +940,6 @@ textarea {
         font-size: 2rem;
         font-weight: 600;
         width: 100%;
-    }
-    
-    .caseStudiesImgElement {
-        position: absolute;
-        left: -200px;
-        top: -50px;
-        vertical-align: middle;
-        border: solid 1px;
-        border-radius: 5px;
-        visibility: hidden;
-        opacity: 0;
-        object-fit: cover;
-        width: 32vw;
-        height: auto;
-        transition: opacity 0.5s, 500ms ease;
-        z-index: 100;
     }
     
     .caseStudies:hover .caseStudiesImgElement{
@@ -1045,6 +1057,75 @@ textarea {
 
     }
 
+    /* Atualização do card de caseStudies*/
+    .caseStudies {
+        display: flex;
+        width: 100%;
+        border: solid 1px #141414;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+        transition: opacity 0.5s, 500ms ease;
+        color: #141414;
+        max-width: 1920px;
+        align-items: center;
+    
+    }
+    
+    .caseStudiesNum {
+        margin: 1rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .caseStudiesTitle {
+        margin: 1rem 1rem 1rem 0;
+        font-size: 2rem;
+        font-weight: 600;
+        width: 100%;
+    }
+    
+    .caseStudiesImgElement {
+        position: static;
+        display: flex;
+        left: 0%;
+        top: 0%;
+        transform: translate(-0%, -0%);
+        vertical-align: middle;
+        border: solid 0px;
+        border-bottom: solid 1px;
+        border-radius: 0px;
+        visibility: visible;
+        opacity: 0;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        opacity: 100;
+        z-index: 100;
+    }
+    
+    .caseStudies:hover .caseStudiesImgElement{
+        opacity: 100;
+        visibility: visible;
+    }
+    
+    .caseStudiesLabel {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        margin: 0rem 1rem 1rem 1rem;
+        font-size: 1.2rem;
+        width: 100%;
+        
+    }
+
+    .caseStudiesAnchor {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        width: 100%;
+    }
+    /*fim da atualização*/
+
     .consideracoes {
         display: flex;
         gap: 0px;
@@ -1076,6 +1157,7 @@ textarea {
         color: #141414;
         
     }
+
 
     #setaEnviar {
         width: 18px;
