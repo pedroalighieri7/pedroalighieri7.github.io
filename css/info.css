@@ -283,6 +283,10 @@ filter: brightness(0) saturate(100%) invert(87%) sepia(100%) saturate(0%) hue-ro
 
 @media (max-width: 576px) {
 
+    #headerInfo {
+        padding: 20px;
+    }
+
     .mainInfo {
     margin: 1rem;
     animation-duration: 1s;
