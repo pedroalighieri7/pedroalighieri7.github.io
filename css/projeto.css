@@ -290,7 +290,7 @@ section.PostApresentacao {
 
     .corpoTextoPost {
         width: 80%;
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding-bottom: 2rem;
     }
 }
@@ -348,7 +348,7 @@ section.PostApresentacao {
 
     .corpoTextoPost {
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.25rem;
         padding-bottom: 2rem;
     }
 
@@ -385,7 +385,7 @@ section.PostApresentacao {
     }
 
     .corpoTextoPost {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .tituloPost {
