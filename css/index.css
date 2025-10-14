@@ -226,9 +226,7 @@ main.mainHome {
         display: flex;
         width: 100%;
         height: fit-content;
-        padding: 1rem 1rem;
         max-width: 1920px;
-        justify-self: center;
 }
 }
 
