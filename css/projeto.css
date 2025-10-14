@@ -18,6 +18,67 @@ main.mainPost {
     animation-name: a-apresentacao;
 }
 
+/* ====================== Textos ====================== */
+.tituloPost,
+.apresentPost,
+.escopoCorpo,
+.textopadrao {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.tituloPost.in-view,
+.apresentPost.in-view,
+.escopoCorpo.in-view,
+.textopadrao.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação por letra */
+.tituloPost.in-view span,
+.apresentPost.in-view span,
+.escopoCorpo.in-view span,
+.textopadrao.in-view span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: letterUp 0.6s forwards;
+}
+
+.tituloPost.in-view span:nth-child(1) { animation-delay: 0s; }
+.tituloPost.in-view span:nth-child(2) { animation-delay: 0.05s; }
+.tituloPost.in-view span:nth-child(3) { animation-delay: 0.1s; }
+/* Continue para todas as letras ou use JS para automatizar o delay */
+
+@keyframes letterUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====================== Imagens ====================== */
+#imagemPostGrande,
+#imagemPostLateral {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    transform: scale(0.9);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+/* Classe adicionada pelo IntersectionObserver */
+#imagemPostGrande.visibleScale,
+#imagemPostLateral.visibleScale {
+    transform: scale(1);
+    opacity: 1;
+}
+
 #imagemPostPainel {
     object-fit: cover;
     width: 100%;
@@ -33,22 +94,29 @@ main.mainPost {
 }
 
 .corpoPost {
-    margin-left: 275px;
+    
     display: flex;
-    gap: 50px;
+    gap: 4.5rem;
     font-size: 1rem;
+}
+
+.apresentPost {
+    margin-top: 4rem;
+    font-size: 2.25rem;
+    width: 30%;
 }
 
 .corpoTextoPost {
-    width: 45%;
-    font-size: 1rem;
+    width: 50%;
+    font-size: 1.25rem;
+    margin-top: 4rem;
 }
 
 .escopoPost {
+    margin: 1.25rem 0rem 3rem 0rem;
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 35%;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .escopoTitulo {
@@ -59,9 +127,34 @@ main.mainPost {
 
 .escopoCorpo {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 1rem;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.25rem;
+}
+
+#subtituloPost {
+    font-size: 2.25rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+    border-bottom: #141414 1px solid;
+}
+
+.capPost {
+    font-size: 1.30rem;
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+}
+
+
+.imagemPostGridSolution {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 section.imagemPostApresentacao {
@@ -77,7 +170,7 @@ section.imagemPostApresentacao {
     height: auto;
     object-fit: cover;
     border-radius: 3px;
-    border: #141414 1px solid;
+    border: #141414 solid 1px;
 }
 
 #imagemPostLateral {
@@ -104,17 +197,20 @@ section.PostApresentacao {
     animation-name: a-apresentacao;
 }
 
+.boxCaptionPost {
+    color: #6c6c6c;
+}
+
 #imagemPostGridLateral {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
-
+    font-size: 1.25rem;
 }
 
 .pageHero {
-    border-bottom: #141414 1px solid;
-    margin: 4.6rem 4.6rem 0 4.6rem;
+    margin: 4.6rem 1rem 0 1rem;
 }
 
 .textoCentralizado {
@@ -127,17 +223,75 @@ section.PostApresentacao {
 .textopadrao {
     width: 40%;
     margin: 0 30%;
-    font-size: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.secondPost {
+    display: flex;
+    width: 100%;
+    gap: 2.25rem;
+    margin-bottom: 2.25rem;
+}
+
+.boxPost {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boxTitlePost {
+    font-size: 2.25rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    padding-top: 3rem
+}
+
+.boxTextPost {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.secondPostMainText {
+    display: flex;
+    gap: 6rem;
+}
+
+.boxListPost {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 /* =========================== media querys projeto ======================================== */
 
 @media (max-width: 1200px) {
+
+    .textopadrao {
+        margin: 0;
+        width: 100%;
+    }
     .corpoPost {
         margin-left: 0px;
         display: flex;
         gap: 1rem;
         font-size: 1rem;
+        flex-direction: column;
+    }
+    .apresentPost {
+        width: 100%;
+    }
+
+    .corpoTextoPost {
+        width: 80%;
+        font-size: 1rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -145,20 +299,32 @@ section.PostApresentacao {
     #imagemPostGridLateral {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
     
-    }    
+    }   
+    
+    .apresentPost {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
+
+    .imagemPostGridSolution {
+        flex-direction: column;
+    }
+
+    .secondPost {
+        flex-direction: column;
+
+    }
 
     #imagemPostPainel {
         object-fit: contain;
         width: 100%;
         height: auto;
         border-radius: 3px;
-        border: #141414 solid 1px;
     }
 
     .tituloPost {
@@ -176,8 +342,7 @@ section.PostApresentacao {
 
     .escopoPost {
         display: flex;
-        flex-direction: column;
-        gap: 16px;
+        justify-items: space-between;
         width: 100%;
     }
 
@@ -189,7 +354,7 @@ section.PostApresentacao {
 
     .corpoPost {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 20px;
         font-size: 1rem;
     }
@@ -197,7 +362,6 @@ section.PostApresentacao {
     .textopadrao {
         width: 100%;
         margin: 0 0%;
-        font-size: 1rem;
     }
 
     .textoCentralizado {
@@ -216,8 +380,8 @@ section.PostApresentacao {
         animation-name: a-apresentacao;
     }
     .pageHero {
-        border-bottom: #141414 1px solid;
-    margin: 4.6rem 1rem 0 1rem;
+        
+        margin: 4.6rem 1rem 0 1rem;
     }
 
     .corpoTextoPost {

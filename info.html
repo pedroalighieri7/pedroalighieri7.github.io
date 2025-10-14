@@ -14,44 +14,55 @@
     <link rel="stylesheet" href="/css/info.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
-<body>
+<body class="bodyInfo">
     <div class="cursor" id="cursor"></div>
     <script src="script.js"></script>
     <!-- header -->
 
-    <header class="header">
+    <header id="headerInfo">
         
-        <a href="index.html" class="logo">Pedro Alighieri</a>
+        <a href="index.html" class="logo">
+            <img class="logoImgInfo" src="/assets/logo.svg" alt="" width="20px">
+            <span class="logoTextInfo">Pedro Alighieri</span>
+        </a>
 
         <nav class="navbar">
-            <a href="info.html">Info
-            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            <a href="/en/index.html">(en)</a>
+            <a id="navbarSeta" href="info.html">Sobre
+            <img id="setaInfo" width="16" height="16" alt="seta" src="assets/seta.svg"/>
             </a>
         </nav>
     </header>
    <!-- Apresentação Post -->
     <main class="mainInfo">
         <section class="margem">
+                    <h1 id="infoTxtApresentacao">
+                            Pedro é um product designer, web developer e designer de interação brasileiro.
+                            Focado em criar experiências digitais relevantes para pessoas, marcas e ideias. Atualmente
+                            no founder team da Zeroo.
+                        </h1>
             <section class="paginaInfo">
+                
                 <section class="info">
+                
                     <div class="infoFormacao">
                         <text class="infoFormacaoTituto">Formação</text>
                         <ul class="infoExperienciaCorpo">
-                            <li>IxDF Member - Interaction Design Foundation (2025)</li>
-                            <li>Design - Universidade de Brasília (UnB) (2021 - 2023)</li>
-                            <li>Elements of User Interface - CalArts (2021 - 2021)</li>
-                            <li>Foundations of User Experience (UX) - Google (2021 - 2021)</li>
-                            <li>Artes Visuais - Universidade de Brasília (UnB) (2019 - 2021)</li>
+                            <li class="mdsdoceu">IxDF Member - Interaction Design Foundation (2025)</li>
+                            <li class="mdsdoceu">Design - Universidade de Brasília (UnB) (2021 - 2023)</li>
+                            <li class="mdsdoceu">Elements of User Interface - CalArts (2021 - 2021)</li>
+                            <li class="mdsdoceu">Foundations of User Experience (UX) - Google (2021 - 2021)</li>
+                            <li class="mdsdoceu">Artes Visuais - Universidade de Brasília (UnB) (2019 - 2021)</li>
                         </ul>
                     </div>
                     <div class="infoExperiencia">
                         <text class="infoExperienciaTitulo">Experiência</text>
                         <ul class="infoExperienciaCorpo">
-                            <li>Product Designer / Sócio - Zeroo (2023) </li>
-                            <li>Product Designer - Serpro (2022 - 2023)</li>
-                            <li>Designer Gráfico - Do ICA ao IdA (2022 - 2022)</li>
-                            <li>Designer Multimídia - Coversando com Designers (2020 - 2021)</li>
-                            <li>Designer Gráfico - Freelancer (2018 - 2019)</li>
+                            <li class="mdsdoceu">Product Designer / Sócio - Zeroo (2023) </li>
+                            <li class="mdsdoceu">Product Designer - Serpro (2022 - 2023)</li>
+                            <li class="mdsdoceu">Designer Gráfico - Do ICA ao IdA (2022 - 2022)</li>
+                            <li class="mdsdoceu">Designer Multimídia - Coversando com Designers (2020 - 2021)</li>
+                            <li class="mdsdoceu">Designer Gráfico - Freelancer (2018 - 2019)</li>
                         </ul>
                     </div>
                 </section>
@@ -59,7 +70,7 @@
                     <text class="bioTitulo">Bio</text>
                     <div class="bioCorpo">
                         <p class="bioCorpoParag"> 
-                            Pedro Alighieri é um artista, designer e desenvolvedor brasileiro. Nordestino de coração, Pedro nasceu em Recife (PE) e passou boa parte de sua vida na cidade de Natal (RN). Formou-se em Design na Universidade de Brasília (UnB), se especializando na área de UX/UI. Seus primeiros trabalhos de design começaram no Paint. Aos 9, criava logos para empresas fictícias, blogs no blogspot e servers no Minecraft, além de adorar criar jogos no Scratch. Em 2010, criou com amigos potiguares um pequeno projeto no Youtube. Participando na criação de thumbnails para o canal, identidade visual e edição de vídeo. Em seu auge, o “Noisjang” possuía mais de 3 milhões de visualizações e 50 mil inscritos. Já no ensino médio, Pedro criou vários projetos por conta própria com o intuito de ajudar os colegas nos estudos. Entre eles, o projeto Liter, um fórum destinado para o aprimoramento de dissertações focado no ENEM. 
+                            Nordestino de coração, Pedro nasceu em Recife (PE) e passou boa parte de sua vida na cidade de Natal (RN). Formou-se em Design na Universidade de Brasília (UnB), se especializando na área de UX/UI. Seus primeiros trabalhos de design começaram no Paint. Aos 9, criava logos para empresas fictícias, blogs no blogspot e servers no Minecraft, além de adorar criar jogos no Scratch. Em 2010, criou com amigos potiguares um pequeno projeto no Youtube. Participando na criação de thumbnails para o canal, identidade visual e edição de vídeo. Em seu auge, o “Noisjang” possuía mais de 3 milhões de visualizações e 50 mil inscritos. Já no ensino médio, Pedro criou vários projetos por conta própria com o intuito de ajudar os colegas nos estudos. Entre eles, o projeto Liter, um fórum destinado para o aprimoramento de dissertações focado no ENEM. 
                         </p>
                         <p class="bioCorpoParag">
                             No meio artístico, participou da exposição da BCE com o Espaço POP, além de participar do White page Gallery concebido pela equipe do MediaLab da Universidade de Brasília. Desenvolveu a IDV e fez parte da montagem da galeria Do ICA ao IdA em homenagem aos 50 anos do Instituo de Artes da UnB.
@@ -82,7 +93,7 @@
     <section class="contato">
         <div class="contatoContainer">
             <text class="contatoTitulo">
-            Que tal um café?
+            Contato
             </text>
             <div class="formulario">
                 <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
@@ -100,7 +111,7 @@
                 <div class="containerButton">
                     <div class="Button">
                         <button class="Enviar" type="submit">Enviar
-                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                        <img id="setaEnviar" width="16" height="16" alt="seta" src="assets/seta.svg"/>
                         </button>
                     </div>
                 </div>
@@ -108,22 +119,21 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <div class="consideracoes">
-        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
+    <footer class="footerInfo">
+        <div class="consideracoesInfo">
+        <h6 class="consideracoesInfo">(2025) Brazil
 </h6>
-        <img src="assets/pinguim.gif" alt="lupe104" class="lupe">
         </div>
         
         <nav class="links">
-            <div class="likedin">
+            <div class="likedinInfo">
                 <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
-                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                <img id="setaFooterInfo" width="16" height="16" alt="seta" src="assets/seta.svg"/>
                 </a>
             </div>
-            <div class="email">
+            <div class="emailInfo">
                 <a href="mailto:contact.pedroalighieri@gmail.com">Email
-                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                <img id="setaFooterInfo" width="16" height="16" alt="seta" src="assets/seta.svg"/>
                 </a>
             </div>
         </nav>

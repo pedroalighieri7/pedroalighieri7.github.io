@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- study exactly what these viewport, content etc are for,
+     so you managed to get into the browser's devmode? What’s that man -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pedro Alighieri">
+    <meta property="og:description" content="Designer, artist & developer. Creativity taken to the next level and fascinated by technology.">
+    <meta property="og:image" content="/assets/thumb.png">
+    <title>Pedro Alighieri</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/info.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+</head>
+<body class="bodyInfo">
+    <div class="cursor" id="cursor"></div>
+    <script src="script.js"></script>
+    <!-- header -->
+
+    <header id="headerInfo">
+        
+        <a href="index.html" class="logo">
+            <img class="logoImgInfo" src="/assets/logo.svg" alt="" width="20px">
+            <span class="logoTextInfo">Pedro Alighieri</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="/en/index.html">(pt)</a>
+            <a id="navbarSeta" href="info.html">About
+            <img id="setaInfo" width="16" height="16" alt="arrow" src="/assets/seta.svg"/>
+            </a>
+        </nav>
+    </header>
+   <!-- Post Presentation -->
+    <main class="mainInfo">
+        <section class="margem">
+            <h1 id="infoTxtApresentacao">
+                Pedro is a Brazilian product designer, web developer, and interaction designer.
+                Focused on creating meaningful digital experiences for people, brands, and ideas. Currently
+                part of the founding team of Zeroo.
+            </h1>
+            <section class="paginaInfo">
+                
+                <section class="info">
+                
+                    <div class="infoFormacao">
+                        <text class="infoFormacaoTituto">Education</text>
+                        <ul class="infoExperienciaCorpo">
+                            <li class="mdsdoceu">IxDF Member - Interaction Design Foundation (2025)</li>
+                            <li class="mdsdoceu">Design - University of Brasília (UnB) (2021 - 2023)</li>
+                            <li class="mdsdoceu">Elements of User Interface - CalArts (2021 - 2021)</li>
+                            <li class="mdsdoceu">Foundations of User Experience (UX) - Google (2021 - 2021)</li>
+                            <li class="mdsdoceu">Visual Arts - University of Brasília (UnB) (2019 - 2021)</li>
+                        </ul>
+                    </div>
+                    <div class="infoExperiencia">
+                        <text class="infoExperienciaTitulo">Experience</text>
+                        <ul class="infoExperienciaCorpo">
+                            <li class="mdsdoceu">Product Designer / Partner - Zeroo (2023)</li>
+                            <li class="mdsdoceu">Product Designer - Serpro (2022 - 2023)</li>
+                            <li class="mdsdoceu">Graphic Designer - From ICA to IdA (2022 - 2022)</li>
+                            <li class="mdsdoceu">Multimedia Designer - Chatting with Designers (2020 - 2021)</li>
+                            <li class="mdsdoceu">Graphic Designer - Freelancer (2018 - 2019)</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="bio">
+                    <text class="bioTitulo">Bio</text>
+                    <div class="bioCorpo">
+                        <p class="bioCorpoParag"> 
+                            From the northeastern of Brazil, 
+                            Pedro was born in Recife (PE) and spent most of 
+                            his life in the city of Natal (RN). He graduated in Design from the University 
+                            of Brasília (UnB), specializing in UX/UI. His first design works began in Paint. 
+                            At the age of 9, he created logos for fictional companies, blogs on Blogspot, and 
+                            Minecraft servers, as well as loved creating games on Scratch. In 2010, he started 
+                            a small YouTube project with friends from Rio Grande do Norte. He participated in 
+                            creating thumbnails for the channel, visual identity, and video editing. At its peak
+                            , “Noisjang” had more than 3 million views and 50 thousand subscribers. In high school
+                            , Pedro created several independent projects to help classmates with their studies. 
+                            Among them, the project Liter, a forum aimed at improving essays.
+                        </p>
+                        <p class="bioCorpoParag">
+                            In the artistic field, he participated in the BCE exhibition with Espaço POP, 
+                            as well as in the White Page Gallery conceived by the MediaLab team from the
+                             University of Brasília. He developed the visual identity and helped set 
+                             up the “From ICA to IdA” gallery in honor of the 50th anniversary of the UnB Art 
+                             Institute.
+                        </p>
+                        <p class="bioCorpoParag">
+                            In the professional field, he worked on improving the gov.br DS, the design system of the 
+                            federal government, as well as creating systems and interfaces for 
+                            institutions such as the Federal Revenue Service, IBAMA, among others. He is currently 
+                            immersed in the world of UX/UI, HCI, WCAG, and AI. Pedro has experience in 
+                            agile interface development within diverse teams. He believes that an accessible, 
+                            ethical, and human approach is essential for creating a digital interface that truly works.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <section class="contato">
+        <div class="contatoContainer">
+            <text class="contatoTitulo">
+            Contact
+            </text>
+            <div class="formulario">
+                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
+                <div class="formularioContainer">
+                    <div class="formularioNomeEmail">
+                        <input class="nome" type="text" name="name" placeholder="Your name e.g. Carlos">
+                        <input class="email"  type="email" name="name" placeholder="Email e.g. youremail@email.com">
+                    </div>
+                    <div class="fomularioTextarea">
+                        <label>What are we going to create?</label>
+                        <textarea id="textarea" name="message" placeholder="write about your idea..."></textarea>
+                    </div>
+                </div>
+                <div class="containerButton">
+                    <div class="Button">
+                        <button class="Enviar" type="submit">Send
+                        <img id="setaEnviar" width="16" height="16" alt="arrow" src="/assets/seta.svg"/>
+                        </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footerInfo">
+        <div class="consideracoesInfo">
+            <h6 class="consideracoesInfo">(2025) Brazil</h6>
+        </div>
+        
+        <nav class="links">
+            <div class="likedinInfo">
+                <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">LinkedIn
+                <img id="setaFooterInfo" width="16" height="16" alt="arrow" src="/assets/seta.svg"/>
+                </a>
+            </div>
+            <div class="emailInfo">
+                <a href="mailto:contact.pedroalighieri@gmail.com">Email
+                <img id="setaFooterInfo" width="16" height="16" alt="arrow" src="/assets/seta.svg"/>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>

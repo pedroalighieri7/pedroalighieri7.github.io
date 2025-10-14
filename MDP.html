@@ -20,159 +20,324 @@
     <!-- header -->
 
     <header class="header">
-        
-        <a href="index.html" class="logo">Pedro Alighieri</a>
+        <a href="index.html" class="logo">
+            <img class="logoImg" src="/assets/logo.svg" alt="" width="20px">
+            <span class="logoText">Pedro Alighieri</span><span class="labelHeader">/ Projeto MDP</span>
+        </a>
 
         <nav class="navbar">
-            <a href="info.html">Info
-            <img id="seta" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+            <a href="/en/index.html">(en)</a>
+            <a id="navbarSeta" href="info.html">Sobre
+            <img id="seta" width="16" height="16" alt="seta" src="assets/seta.svg"/>
             </a>
         </nav>
     </header>
-   <!-- Apresentação Post -->
+   <!-- sim esses corpos de texto foram implementados de uma maneira...digamos... de uma maneira estranha
+    o código tá feio pfv não olhe, tive menos de 24h para fazer isso do jeito que eu queria -- haverá outras atualizações
+    -- só não sei quando vou ter tempo de ajeitar isso tudo. Agora pfv pare de ver meu código -->
 
-   <div class="pageHero">
+<div class="pageHero">
     <section class="painel">
-        <img id="imagemPostPainel" src="assets/02/painel MDP.png" alt="Três signos em branco num fundo vermelho. O primeiro signo é um círculo vazado, o segundo signo é um 'x' e o terceiro signo é um coração">
+        <h1 class="tituloPost">Projeto MDP</h1>
+        <img id="imagemPostPainel" src="assets/02/painel MDP.png" alt="Imagem apresenta algumas telas do 
+            sistema onde a marca da empresa está sendo aplicada. Os dois frames do sistema estão sobrepostos num fundo laranja.">
     </section>
     
     <section class="PostApresentacao">
-        <h1 class="tituloPost">Projeto MDP</h1>
-        <div class="corpoPost">
-            <text class="corpoTextoPost">
-                O Material Direcional Pedagógico (MDP) foi criado para ajudar os alunos da Universidade de Brasília (UnB) 
-                na disciplina de Design de Jogos, tornando o desenvolvimento de jogos eletrônicos mais simples e acessível. 
-                O maior desafio foi criar uma solução que atendesse às necessidades de estudantes de áreas variadas, como Design, 
-                Engenharia de Software, Música e Artes, de forma prática e fácil de usar. Pensando nisso, foi desenvolvido um conjunto 
-                de ferramentas dinâmicas e eficientes, que buscam resolver as principais dificuldades dos alunos e melhorar seu desempenho 
-                na disciplina, conectando teoria e prática de um jeito que faz sentido para todos, independentemente de sua formação.
-            </text>
-            <div class="escopoPost">
+        <div class="escopoPost">
                 <text class="escopoCorpo">
+                    <p>UX/UI</p>
                     <p>Design de Serviço</p>
-                    <p>Product Design</p>
+                    <p>UX/UI</p>
+                    <p>Design de Serviço</p>
                 </text>
             </div>
+            <h1 id="subtituloPost">Nem toda solução precisa ser um aplicativo</h1>
+            <h1 class="capPost">( 1 ) Visão geral</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost"> Um Material Direcional Pedagógico</h1>
+            <text class="corpoTextoPost">
+                Esse case study relata o desenvolvimento do meu trabalho de conclusão de curso (TCC), 
+                um PDF interativo para auxiliar na concepção de jogos digitais na disciplina de Design de 
+                Jogos da Universidade de Brasília (UnB) . O processo de criar um produto para um público abrangente, 
+                o desenvolvimento de um design de interação com função pedagógica efetiva e a elaboração de um produto final que se inspira 
+                fortemente em princípios de UX, mas fora da lógica de concepção de um aplicativo.
+        </div>    
+    </section>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/mdpmock.jpg" alt="" height="988px">
+            <text class="boxCaptionPost">Exemplo de um MDP.</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/mdp-logo.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Marca desenvolvida para o projeto.</text>
         </div>
     </section>
 </div>
- 
-    <main class="mainPost">
-        <section class="imagemPostApresentacao">
-            <div id="imagemPostGridLateral">
-                <img id="imagemPostLateral" src="assets/02/diagrama.png" alt="Diagrama Celular, ferramente do projeto">
-                <img id="imagemPostLateral" src="assets/02/persona.png" alt="Persona Zelda, aluna criada de acordo com os estudos de usuário do projeto">
-            </div> 
-            <div class="textoCentralizado">
-                <text class="textopadrao">
-                    Com o objetivo de transformar o desafio pedagógico em uma questão de design, 
-                    mais especificamente em um problema de design de serviço, foi criado o <b>Diagrama Celular</b>. 
-                    Essa ferramenta mapeia todos os fatores envolvidos no problema, organizando-os em camadas de 
-                    complexidade por meio de métodos e ferramentas de design, sendo eles: persona, cenário, 
-                    value proposition canvas, jornada do usuário e blueprint de serviço. 
-                    Cada nuance foi cuidadosamente detalhada para permitir uma abordagem eficiente e estruturada, 
-                    garantindo que todas as dimensões do problema fossem consideradas e solucionadas de maneira integrada e 
-                    estratégica. O Diagrama Celular se tornou, assim, uma base essencial para promover soluções inovadoras e alinhadas 
-                    às necessidades reais do projeto.
 
-                </text>
-            </div>
-            <div id="imagemPostGridLateral">
-                <img id="imagemPostLateral" src="assets/02/vpc.png" alt="VPC - Value Preposition Canvas">
-                <img id="imagemPostLateral" src="assets/02/jornada.png" alt="Jornada do usuário">
-            </div>
-            <img id="imagemPostGrande" src="assets/02/blueprint.png" alt="Ferramenta Blue Print de serviço">
-        </section>
-        <div class="textoCentralizado">
-            <text class="textopadrao">
-                Com base nos dados e insights gerados pelo Diagrama Celular, foi criado o <b>Material Direcional Pedagógico (MDP)</b>, 
-                um PDF interativo desenvolvido com base no Material Design 3 da Google. Essa solução foi projetada para ser acessível 
-                e funcional em qualquer sistema operacional de celular, garantindo que todos os estudantes possam utilizá-lo de forma 
-                prática e intuitiva. Além disso, o MDP foi pensado para ser de fácil manutenção, permitindo atualizações e ajustes 
-                contínuos, sempre com o objetivo de oferecer uma experiência de aprendizado eficiente e alinhada às necessidades 
-                dos usuários.
-            </text>
-        </div>
-    </div>
-    <div id="imagemPostGridLateral">
-        <img id="imagemPostLateral" src="assets/02/mdp-logo.png" alt="Logo do projeto em branco no fundo vermelho. Apresenta o nome 'MDP' ">
-        <img id="imagemPostLateral" src="assets/02/mdp2.png" alt="Material didático utilizado no projeto">
-    </div>
-    <div class="textoCentralizado">
-        <text class="textopadrao">
-        Cada Material Direcional Pedagógico (MDP) começa com um direcionamento inicial, que 
-        apresenta o tema abordado de forma clara e organizada em tópicos, revisados pelo professor 
-        responsável. O conteúdo é estruturado em etapas, divididas em cards que organizam as informações de 
-        maneira didática e acessível.
-        <br>
-        <br>
-        <a href="https://bdm.unb.br/bitstream/10483/36992/1/2023_PedroAlighieriNevesMelo_tcc.pdf">Pojeto completo - bdm.unb.br</a>
-        </text>
-    </div>
-    <div id="imagemPostGridLateral">
-        <img id="imagemPostLateral" src="assets/02/mdp.png" alt="Material que os alunos usam na versão para celular">
-        <img id="imagemPostLateral" src="assets/02/icones.png" alt="Ícones que representam os formatos dos arquivos de cada elemento">
-    </div>
-        <section class="paginacao">
-            <div class="anterior">
-                <a href="/marca-zeroo.html" class="anteriorAnchor">
-                    <img id="anteriorImagem" width="23" height="23" src="assets/sentante.svg" alt="Seta para esquerda">
-                    <text class="anteriorTexto">Anterior</text>
-                </a>
-            </div>
-            <div class="proximo">
-                <a href="/zeroo-interface.html" class="proximoAnchor">
-                    <text class="proximoTexto">Próximo</text>
-                    <img id="proximoImagem" width="23" height="23" src="assets/setanext.svg" alt="Seta para direita">
-                </a>
-            </div>
-        </section>
-    </main>
-    <section class="contato">
-        <div class="contatoContainer">
-            <text class="contatoTitulo">
-            Que tal um café?
-            </text>
-            <div class="formulario">
-                <form action="https://formsubmit.co/contact.pedroalighieri@gmail.com" method="POST">
-                <input type="hidden" name="_next" value="https://pedroalighieri7.github.io/">
-                <div class="formularioContainer">
-                    <div class="formularioNomeEmail">
-                        <input class="nome" type="text" name="name" placeholder="Seu nome ex: Carlos">
-                        <input class="email"  type="email" name="name" placeholder="Email ex: seuemail@email.com">
-                    </div>
-                    <div class="fomularioTextarea">
-                        <label>O que vamos desenvolver?</label>
-                        <textarea id="textarea" name="message" placeholder="escreva sobre sua ideia..."></textarea>
-                    </div>
-                </div>
-                <div class="containerButton">
-                    <div class="Button">
-                        <button class="Enviar" type="submit">Enviar
-                        <img id="setaEnviar" width="23" height="23" alt="seta" src="assets/seta.svg"/>
-                        </button>
-                    </div>
-                </div>
-                </form>
-            </div>
+<div class="pageHero">
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 2 ) Papel</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">Uma verdadeira jogatina</h1>
+            <text class="corpoTextoPost">
+                Como esse projeto foi o meu trabalho de conclusão de curso. Todos os elementos gráficos, identidade visual, levantamento de pesquisa com usuário, uso de metodologias e projeto final, foram de minha autoria.
         </div>
     </section>
+        <text class="boxTitlePost">Resultados</text>
+    <section class="secondPost">
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Experiência com corpo docente:</b> o material foi desenvolvido com o auxílio de um dos integrantes da disciplina de jogos. Todas as estruturas de análise e concepção de produto respeitaram a visão do corpo docente. Tornando a adoção do produto final muito mais natural.</li>
+                    <li><b>Design de serviço com foco pedagógico:</b> algumas metodologias de design de serviço foram utilizadas, como o Quadro de Proposta de Valor e o Blueprint de Serviço. No entanto, a abordagem adotada seguiu uma direção voltada ao aprendizado, buscando compreender como as informações transmitidas em sala de aula poderiam ser apresentadas aos alunos de forma mais eficiente e significativa.</li>
+                </ul>
+            </div>
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Design thinking aplicado:</b> Ao longo do trabalho, diversas metodologias foram aplicadas com o objetivo de valorizar a perspectiva do usuário. Personas, cenários e jornadas, entre outras ferramentas, foram utilizadas para ampliar o universo que envolve o usuário, culminando na criação de um dos produtos desenvolvidos: o Diagrama Celular.</li>
+                    <li><b>Produto embasado:</b>  a primeira ideia foi desenvolver um aplicativo. No entanto, essa solução não se adequava ao usuário final do produto. Logo, a pesquisa foi respeitada e o produto seguiu com os levantamentos feitos que ao final se transformou em um PDF interativo.</li>
+            </div>
+    </section>
+</div>
+
+<div class="pageHero">
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 3 ) Principais desafios</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">Quase um game-over</h1>
+        </div>
+    </section>
+    <section class="secondPost">
+            <div class="boxPost">
+                <text class="boxTitlePost">Desafio</text>
+                <ul class="boxListPost">
+                    <li><b>Fragilizada por tempos difíceis:</b> devido à pandemia de Covid-19, a disciplina, que integrava dois campi e quatro cursos distintos, encontrava-se em uma situação de risco. Seu cronograma havia sido desestruturado, resultando na ausência de oferta da disciplina durante dois anos.</li>
+                    <li><b>Agendas opostas:</b> a entrega deste trabalho final e a próxima oferta da disciplina não coincidiam, impossibilitando a aplicação direta do produto. Assim, o teste seria realizado apenas após a concepção do produto final.</li>
+                    <li><b>Tic-tac:</b> havia menos de quatro meses para entrega do relatório final do projeto, uma identidade visual, todos os materiais direcionais pedagógicos (MDPs) e um UIkit para ajustes futuros.</li>
+                </ul>
+            </div>
+            <div class="boxPost">
+                <text class="boxTitlePost">Solução</text>
+                <ul class="boxListPost">
+                    <li><b>Interfaces gráficas simples e claras:</b> Mais práticas de desenvolver e demandam menos tempo de elaboração visual, adotando paletas de cores usuais e fluxos de navegação já consolidados por empresas de destaque no mercado.</li>
+                    <li><b>Entendendo a história:</b> todas as pesquisas realizadas neste trabalho tiveram como foco uma abordagem qualitativa. Foram conduzidas diversas entrevistas com alunos que já haviam cursado a disciplina uma ou mais vezes, além de conversas com seus organizadores.</li>
+                    <li><b>O mais importante primeiro:</b>  em um primeiro momento, seriam elaborados apenas alguns MDPs iniciais para serem testados na disciplina. Após essa etapa, seriam realizados ajustes e versionamentos do material, abrindo espaço para a continuidade e evolução do projeto.</li>
+                </ul>
+    </section>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/mdp-logo.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Marca do projeto</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/fluxo-mdp.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Fluxo do aluno fora e dentro da universidade.</text>
+        </div>
+    </section>
+</div>
+
+<div class="pageHero">
+ 
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 4 ) Coletando informações</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">Entendendo o cosmos do usuário</h1>
+        </div>
+    </section>
+    <section class="secondPost">
+            <div class="boxPost">
+                <text class="boxTitlePost">Problema</text>
+                <text class="boxTextPost">
+Após a realização de um extenso estudo, incluindo pesquisas, entrevistas, leituras oficiais e não oficiais, surgiu um desafio central: como transformar toda essa base teórica em uma aplicação prática? Que tipo de produto poderia surgir a partir desse conhecimento? Como conectar teoria, vivência do estudante e as necessidades da disciplina de forma coerente e útil?                </text>
+            </div>
+            <div class="boxPost">
+                <text class="boxTitlePost">Solução</text>
+                <text class="boxTextPost">
+Boa parte do UX foi fundamentado na Jakob’s Law. Não havia tempo nem pessoal para desenvolver todos os elementos então foi necessário adotar funcionalidades que já tinham sido testadas e aprimoradas. Elementos e diretrizes do Excel, Kayak, Ifood e outras gigantes do mercado foram essenciais para concepção de assets, grids e comportamentos do sistema.                </text>
+    </section>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/diagrama.png" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">O diagrama celular, também apelidado como Diagrama dos Elementos Integrantes da Aplicação de um Material Pedagógico Ligado à Abordagem de Design de Serviço (DEIAMPLADS), mas vamos ficar com diagrama celular mesmo…é mais prático.</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/persona.png" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Persona, primeira camada e a mais próxima do usuário.</text>
+        </div>
+    </section>
+
+</div>
+
+<div class="pageHero">
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 5 ) Visualização aperfeiçoada</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">o cosmos do usuário</h1>
+                <text class="corpoTextoPost">
+                O uso do Diagrama Celular tornou a circulação de ideias significativamente mais dinâmica. 
+                Todas as propostas passaram a se apoiar na pesquisa como referência, permitindo que a etapa c
+                riativa do processo transcorresse de forma mais tranquila. Ao traduzir a pesquisa para um contexto 
+                visual, as informações se tornaram mais claras 
+                e elucidativas para os docentes da disciplina, tornando a troca de ideias mais prática e 
+                eficiente.
+        </div> 
+    </section>
+    </section>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/vpc.png" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost"> Value Preposition Canvas da pesquisa</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/blueprint.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Blueprint de serviço elaborado</text>
+        </div>
+    </section>
+    
+</div>
+
+<div class="pageHero">
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 6 ) Coletando informações 2: o retorno</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">Um pouco mais de informação</h1>
+        </div>
+    </section>
+    <text class="boxTitlePost"> Achados importantes</text>
+    <section class="secondPost">
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Precisa ser de fácil acesso:</b> nada de uma coisa muito mirabolante. O produto deveria ser simples e direto, sem exigir o download de aplicativos adicionais ou atualizações frequentes, pois isso poderia comprometer a experiência do usuário. Além disso, era essencial garantir compatibilidade ampla, evitando problemas que pudessem dificultar seu uso.</li>
+                    <li><b>Arquivo leve:</b> nada de arquivos pesados. Ele possivelmente seria compartilhado entre os estudante em aplicativos de mensagem. </li>
+                </ul>
+            </div>
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Adequado para dispositivos móveis:</b> no caminho para facul, relendo aquela partezinha importante no ônibus ou no metrô.</li>
+                    <li><b>Ter informação precisa:</b> sem lero lero, o mínimo com muito a falar. Direto ao ponto..</li>
+            </div>
+    </section>
+</div>
+
+<div class="pageHero">
+
+    <div class="pageHero">
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 7 ) MDP</h1>
+        <div class="corpoPost">
+            <h1 class="apresentPost">o cosmos do usuário</h1>
+                <text class="corpoTextoPost">
+                O Material Direcional Pedagógico (MDP) é um PDF interativo desenvolvido para 
+                apoiar o aprendizado prático de desenvolvimento de jogos digitais, apresentando 
+                conceitos essenciais da disciplina de forma clara, acessível e adaptada a dispositivos 
+                móveis. Criado com foco na autonomia do estudante e na facilidade de uso pelo professor, 
+                o MDP funciona como um guia compacto, dinâmico e leve, que pode ser utilizado sem necessidade 
+                de internet, site ou aplicativo. Seu principal objetivo direcionar o aprendizado de forma 
+                estruturada e visual, facilitando a compreensão dos processos que envolvem a criação de um jogo 
+                digital, desde as regras e mecânicas até a animação e estilo visual. </text>
+        </div> 
+    </section>
+    </section>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/ordem.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost"> O MDP é dividido em cards que organizam os conteúdos em escala de complexidade.</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/icones.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Ícones de conteúdo apresentam qual tipo de arquivo está disponível no pdf.</text>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="imagemPostGridSolution">
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/material.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost"> Arquivo introdutório para cada área, facilitando a compreensão do estudante.</text>
+        </div>
+        <div id="imagemPostGridLateral">
+            <img id="imagemPostLateral" src="assets/02/cards.jpg" alt="A imagem apresenta a cor utilizada #FF6B00, uma cor laranja. Ao lado temos a tipografia Manjari em vários pesos. Essa tipografia foi a utilizada na logo.">
+            <text class="boxCaptionPost">Prévia do arquivo por imagem resumida e linguagem do conteúdo.</text>
+        </div>
+    </section>
+    
+</div>
+    
+    
+    <section class="PostApresentacao">
+            <h1 id="subtituloPost"></h1>
+            <h1 class="capPost">( 8 ) Finalização</h1>
+        <div class="textoCentralizado">
+            <div class="corpoPost">
+            <h1 class="apresentPost">Obrigado por jogar!</h1>
+                <text class="corpoTextoPost">
+                Apesar de ser um trabalho relativamente simples, 
+                a parte rica e, na época, complexa de sintetizar foi a pesquisa. A pesquisa 
+                é gratificante e estrutura o esqueleto de projetos complexos. Auxilia em tomadas 
+                de decisões e foi essencial para a construção lógica do meu projeto. Deixo aqui meu 
+                muito obrigado aos voluntários que aceitaram meus pedidos de entrevista e lógico à banca 
+                avaliadora do projeto. Segue o link caso projeto completo:  <a href="https://bdm.unb.br/bitstream/10483/36992/1/2023_PedroAlighieriNevesMelo_tcc.pdf">Pojeto completo - bdm.unb.br</a></text>
+        </div>
+        </div>
+    </section>
+        <text class="boxTitlePost">Aprendizados</text>
+    <section class="secondPost">
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Simplicidade é importante:</b>nem sempre um aplicativo bonito é um aplicativo funcional. Priorizar o essencial e trazer soluções inovadoras é mais atrativo que elementos bonitos jogados na tela.</li>
+                    <li><b>Existe mais coisas além de aplicativos e web:</b> abrir a mente para as possibilidades da interação humano-computador é necessária. Em um mundo com tantas mudanças constantes, às vezes o caminho mais prático é o mais inovador.</li>
+                </ul>
+            </div>
+            <div class="boxPost">
+                <ul class="boxListPost">
+                    <li><b>Visualização de pesquisa é necessária:</b> uma pesquisa de várias páginas dificilmente vai ser lida, mas um infográfico é sempre uma opção mais prática. As informações fluem mais rápido e a estruturação de ideias é mais dinâmica.</li>
+                    <li><b>Priorização de UX:</b> uma vez que você entende quem precisa de você, fica muito mais fácil ajudar essa pessoa. Entender o universo do usuário é vital para a elaboração de produtos funcionais.</li>
+                </ul>
+    
+    </section>
+    <img id="imagemPostGrande" src="assets/02/mdp.png" alt="Imagem apresenta vários frames do sistema da Zeroo.">
+</div>
+
+    <section class="paginacao">
+            <div class="proximo">
+                <a href="/zeroo-interface.html" class="proximoAnchor">
+                    <text class="proximoTexto">Próximo é Zeroo</text>
+                    <img id="proximoImagem" width="25" height="25" src="assets/setanext.svg" alt="Seta para direita">
+                </a>
+            </div>
+    </section>  
+    
     <footer class="footer">
         <div class="consideracoes">
-        <h6>2025 - Feito com amor ❤ por Pedro Alighieri
-</h6>
-        <img src="assets/pinguim.gif" alt="lupe104 - meu penguim do clube penguin" class="lupe">
+        <h6>(2025) Brazil</h6>
         </div>
         
         <nav class="links">
             <div class="likedin">
                 <a href="https://www.linkedin.com/in/pedro-alighieri-melo-915960208">Linkedin
-                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                <img id="setaFooter" width="16" height="16" alt="seta" src="assets/seta.svg"/>
                 </a>
             </div>
             <div class="email">
                 <a href="mailto:contact.pedroalighieri@gmail.com">Email
-                <img id="setaFooter" width="23" height="23" alt="seta" src="assets/seta.svg"/>
+                <img id="setaFooter" width="16" height="16" alt="seta" src="assets/seta.svg"/>
                 </a>
             </div>
         </nav>

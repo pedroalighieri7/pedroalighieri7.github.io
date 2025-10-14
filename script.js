@@ -1,29 +1,38 @@
 // ------------------------ Mouse bolinha ----------------------------
-window.addEventListener("mousemove", (elemento)=>{
+window.addEventListener("mousemove", (elemento) => {
     let cursor = document.getElementById("cursor");
-    setTimeout(()=>{
+    setTimeout(() => {
         cursor.style.top = `${elemento.clientY}px`;
         cursor.style.left = `${elemento.clientX}px`;
-    },50)
-})
+    }, 50);
+});
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elementos = document.querySelectorAll(".caseStudies, .logo, .navbar, .projetoX, .likedin, .email, .nome, .anterior, .proximo, .Enviar, #textarea");
-    const cursor = document.querySelector(".cursor");
-    
+    const elementos = document.querySelectorAll(
+        ".caseStudies, .logo, .navbar, .projetoX, .likedin, .email, .nome, .proximoAnchor, .Enviar, #textarea"
+    );
+    const cursor = document.getElementById("cursor");
+
+    const path = window.location.pathname;
+    if (path.endsWith("info.html") || path.endsWith("en/info.html")) {
+        cursor.style.background = "#fff"; 
+    }
+
     function addActiveClass() {
         cursor.classList.add("active");
     }
-    
+
     function removeActiveClass() {
         cursor.classList.remove("active");
     }
-    
-    elementos.forEach(elemento => {
+
+    elementos.forEach((elemento) => {
         elemento.addEventListener("mouseenter", addActiveClass);
         elemento.addEventListener("mouseleave", removeActiveClass);
     });
 });
+
+
 
 //----------------------- Header ---------------------
 
@@ -31,53 +40,22 @@ function handleScroll() {
     const header = document.querySelector('.header');
     
     if (window.scrollY < 40) {
-        header.style.backgroundColor = 'transparent';
+        header.style.backgroundColor = '#fff';
 
     } else {
-        header.style.backgroundColor = '#EDE5DC';
+        header.style.backgroundColor = '#ffffffff';
     }
 }
 
 //----------------------- Header mediaQuery 576px ---------------------
 
-function mediaQueryMobile() {
-    const mediaQuery = window.matchMedia('(max-width: 576px)');
 
-    if (mediaQuery.matches) {
-
-        document.addEventListener('scroll', handleScroll);
-    } else {
-        document.removeEventListener('scroll', handleScroll);
-        const header = document.querySelector('.header');
-        header.style.backgroundColor = 'transparent'; 
-    }
-}
-
-mediaQueryMobile();
-
-window.addEventListener('resize', mediaQueryMobile);
-
-// ------------------------ Formulário ------------------------
-
-document.querySelector(".formulario").addEventListener('submit', function(evento) {
-    let nome = document.querySelector('.nome').value;
-    let email = document.querySelector('.email').value;
-    let mensagem = document.getElementById('textarea').value;
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (nome === "" || email === "" || mensagem === "") {
-        alert("Por favor, preencha todos os campos para enviar a mensagem")
-        evento.preventDefault();
-    } if (email ==! regex) {
-        evento.preventDefault();
-    }
-    });
 
 // ------------------------ Imagem card ------------------------
 
 function moveCaseStudiesImg() {
   const allCaseStudies = document.querySelectorAll('.caseStudies'); // pega todas as seções
-  const isMobile = window.innerWidth <= 576;
+  const isMobile = window.innerWidth <= 768;
 
   allCaseStudies.forEach(section => {
     const containerLabel = section.querySelector('.containerCaseStudiesLabel');
@@ -105,3 +83,52 @@ moveCaseStudiesImg();
 
 
 window.addEventListener('resize', moveCaseStudiesImg);
+
+document.addEventListener("DOMContentLoaded", () => {
+    // ======== Textos ========
+    const elements = document.querySelectorAll(".tituloPost, .apresentPost, .escopoCorpo, .textopadrao");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+                observer.unobserve(entry.target); // anima apenas uma vez
+            }
+        });
+    }, {
+        threshold: 0.2 // 20% do elemento visível
+    });
+
+    elements.forEach(el => observer.observe(el));
+
+    // ======== Imagens ========
+    const imagens = document.querySelectorAll("#imagemPostGrande, #imagemPostLateral");
+
+    const observerImgs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visibleScale");
+                observerImgs.unobserve(entry.target); // anima apenas uma vez
+            }
+        });
+    }, {
+        threshold: 0.3 // 30% do elemento visível
+    });
+
+    imagens.forEach(img => observerImgs.observe(img));
+});
+
+
+document.querySelector(".formulario").addEventListener('submit', function(evento) {
+    let nome = document.querySelector('.nome').value;
+    let email = document.querySelector('.email').value;
+    let mensagem = document.getElementById('textarea').value;
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (nome === "" || email === "" || mensagem === "") {
+        alert("Por favor, preencha todos os campos para enviar a mensagem")
+        evento.preventDefault();
+    } if (email ==! regex) {
+        evento.preventDefault();
+    }
+    });

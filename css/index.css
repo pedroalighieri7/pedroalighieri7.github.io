@@ -14,10 +14,23 @@
 }
 
 
+    
+
+
 main.mainHome {
-    margin: 4.6rem;
+    margin: 4.6rem 1rem 4rem 1rem;
     animation-duration: 1s;
     animation-name: a-apresentacao;
+}
+
+.proximoIndex {
+    margin: 0 1rem 4rem 1rem;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem 1rem;
+        max-width: 1920px;
+        justify-self: center;
 }
 
 .row1 {
@@ -51,6 +64,10 @@ main.mainHome {
     object-position: center;
     overflow: hidden;
     border-radius: 3px;
+}
+
+.sobreMim {
+    font-size: 3rem;
 }
 
 .projetoXImageAlt {
@@ -204,6 +221,15 @@ main.mainHome {
     animation-name: a-apresentacao;
 }
 
+.proximoIndex {
+    margin: 0 1rem 4rem 1rem;
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem 1rem;
+        max-width: 1920px;
+        justify-self: center;
+}
 }
 
 

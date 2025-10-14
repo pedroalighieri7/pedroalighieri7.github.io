@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: #ffffff;
+}
+
+.logoImgInfo {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(111%) hue-rotate(123deg) brightness(113%) contrast(100%);
+display: none;
+}
+
+
+
 @keyframes a-apresentacao{
     from{
         translate: 0 5vh;
@@ -12,25 +27,54 @@
 }
 
 main.mainInfo {
-    margin: 4.6rem;
+    margin: 4.6rem 1rem;
     animation-duration: 1s;
     animation-name: a-apresentacao;
     min-height: 40vh;
 }
 
+.bodyInfo  {
+   min-height: 100vh;
+   background-color: #111;
+}
+
 .paginaInfo {
     display: flex;
+    justify-content: end;
     gap: 5%;
     max-width: 1920px;
+    margin-top: 4.6rem;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    margin-left: 5rem;
-    margin-top: 5rem;
     min-width: 35%;
     gap: 2rem;
+}
+
+.consideracoesInfo {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#headerInfo {
+   position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 100;
+    justify-content: space-between;
+    background-color: #111;
+    border-bottom: #474747 solid 1px;
+
+
 }
 
 .infoFormacao {
@@ -40,10 +84,9 @@ main.mainInfo {
 }
 
 .infoFormacaoTituto {
-    font-size: 2rem;
-    padding: 1rem 0rem;
-    border-top: 1px solid #141414;
-    font-weight: 600;
+    font-size: 2.25rem;
+    padding: 0rem 0rem 2rem 0rem;
+    font-weight: 500;
 
 }
 
@@ -60,10 +103,9 @@ main.mainInfo {
 }
 
 .infoExperienciaTitulo {
-    font-size: 2rem;
-    padding: 1rem 0rem;
-    border-top: 1px solid #141414;
-    font-weight: 600;
+    font-size: 2.25rem;
+    padding: 0rem 0rem 2rem 0rem;
+    font-weight: 500;
 
 }
 
@@ -75,22 +117,109 @@ main.mainInfo {
     font-size: 1rem;
 }
 
+.mdsdoceu {
+    color: #7e7e7e;
+}
+
 .bio {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     max-width: 40%;
 }
 
 .bioTitulo {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.25rem;
+    font-weight: 500;
 }
 
 .bioCorpo {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    color: #7e7e7e;
 }
+
+.bioCorpoParag {
+    color: #7e7e7e;
+}
+
+.imgPerfil {
+ display: flex;
+ object-fit: cover;
+}
+
+.imgPerfilElement {
+    width: auto;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: #141414 solid 1px;
+}
+
+.footerInfo {
+    display: flex;
+    flex-direction: row;
+    border-top:1px solid #474747;
+    justify-content: space-between;
+    width: 100%;
+    padding:  2rem 1rem 2rem 1rem;
+    margin-top: auto;
+}
+
+#setaInfo {
+    transition: transform 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(87%) sepia(100%) saturate(0%) hue-rotate(259deg) brightness(103%) contrast(103%);
+    
+}
+
+#navbarSeta:hover #setaInfo{
+    transform: rotate(-45deg);
+}
+
+.consideracoesInfo {
+    display: flex;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.likedinInfo a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        margin-right: 0px;
+        text-transform: uppercase;
+        padding-left: 0px;
+        transform: 500ms ease;
+        color: #ffffff;
+
+    }
+    
+    .emailInfo a {
+        font-size: 1.25rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 400;
+        margin-right: 0px;
+        text-transform: uppercase;
+        padding-left: 0px;
+    }
+	
+	
+	#setaFooterInfo {
+    transition: transform 0.3s ease;
+filter: brightness(0) saturate(100%) invert(87%) sepia(100%) saturate(0%) hue-rotate(259deg) brightness(103%) contrast(103%);
+}
+
+.likedinInfo a:hover #setaFooterInfo {
+    transform: rotate(-45deg);
+}
+
+.emailInfo a:hover #setaFooterInfo {
+    transform: rotate(-45deg);
+}
+
 
 /* =========================== media querys info ======================================== */
 
@@ -103,11 +232,39 @@ main.mainInfo {
 }
 
 @media (max-width: 768px) {
+
+    .bioTitulo {
+    
+    margin-bottom: 1rem;
+}
+
+    .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+}
+
+    #infoTxtApresentacao {
+        font-size: 2.5rem;
+        padding: 1rem 0rem;
+    }
+    .footerInfo {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #474747;
+        width: 100%;
+        padding:  2rem 1rem 2rem 1rem;
+        margin-top: auto;
+        gap: 2rem;
+    }
+
     .paginaInfo {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         max-width: 1920px;
+        margin-top: 0rem;
     }
     .bio {
         display: flex;
@@ -118,19 +275,59 @@ main.mainInfo {
         display: flex;
         flex-direction: column;
         margin-left: 0rem;
-        margin-top: 3.5rem;
+        margin-top: 0rem;
         min-width: 35%;
         gap: 2rem;
     }
 }
 
 @media (max-width: 576px) {
+
+    .mainInfo {
+    margin: 1rem;
+    animation-duration: 1s;
+    animation-name: a-apresentacao;
+    min-height: 40vh;
+}
+
+    #infoTxtApresentacao {
+        font-size: 2rem;
+        padding: 1rem 0rem;
+    }
+
     main.mainInfo {
         margin: 1rem;
         animation-duration: 1s;
         animation-name: a-apresentacao;
         min-height: 40vh;
     }
+
+    .likedinInfo a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        margin-right: 0px;
+        text-transform: uppercase;
+        padding-left: 0px;
+        transform: 500ms ease;
+
+    }
     
+    .emailInfo a {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        margin-right: 0px;
+        text-transform: uppercase;
+        padding-left: 0px;
+    }
+
+    .logoImgInfo {
+        display: block;
+    }
+
+    .logoTextInfo {
+        display: none;
+    }
 
 }
