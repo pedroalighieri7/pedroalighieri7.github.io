@@ -518,13 +518,16 @@ h6 {
 }
 
 .paginacao {
-    padding: 2rem 0rem;
-    display: flex;
-    width: 100%;
-}
+        margin-top: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
 
 .proximo {
-    margin: 1rem;
+    margin: 0rem;
     display: flex;
     width: 100%;
     height: auto;
@@ -1248,13 +1251,7 @@ h1 {
         justify-content: left;
     }
 
-    .proximo {
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        padding: 1rem 0rem;
-        justify-content: right;
-    }
+
     
     .anteriorTexto {
         color: #141414;
@@ -1279,7 +1276,7 @@ h1 {
     
     .proximoTexto {
         color: #141414;
-        font-size: 25px;
+        font-size: 1.25rem;
         text-transform: uppercase;
     }
     

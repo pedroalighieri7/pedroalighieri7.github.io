@@ -221,15 +221,7 @@ main.mainHome {
     animation-name: a-apresentacao;
 }
 
-.proximoIndex {
-        margin: 0 1rem 4rem 1rem;
-        display: flex;
-        width: 100%;
-        height: fit-content;
-        padding: 1rem 0rem;
-        max-width: 1920px;
-        justify-self: normal;
-}
+
 }
 
 
