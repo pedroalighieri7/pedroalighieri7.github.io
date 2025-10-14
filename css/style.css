@@ -1035,6 +1035,14 @@ textarea {
   
 @media (max-width: 576px) {
 
+    .proximo {
+    margin: 1rem 0rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0rem;
+}
+
     #infoTxtApresentacao {
     font-size: 4rem;
     color: #ffffff;
